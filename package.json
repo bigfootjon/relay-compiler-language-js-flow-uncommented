@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
-    "install": "npm run build"
+    "install": "yarn run build"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
