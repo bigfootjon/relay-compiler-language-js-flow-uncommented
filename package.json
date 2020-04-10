@@ -13,27 +13,25 @@
     "react",
     "flow"
   ],
-  "homepage": "https://github.com/zth/relay-compiler-language-js-flow-uncommented",
+  "homepage": "https://github.com/bigfootjon/relay-compiler-language-js-flow-uncommented",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url":
-    "https://github.com/zth/relay-compiler-language-js-flow-uncommented.git"
+    "url": "https://github.com/bigfootjon/relay-compiler-language-js-flow-uncommented.git"
   },
   "bugs": {
-    "url":
-    "https://github.com/zth/relay-compiler-language-js-flow-uncommented/issues"
+    "url": "https://github.com/bigfootjon/relay-compiler-language-js-flow-uncommented/issues"
   },
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
     "install": "yarn run build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "@babel/preset-flow": "^7.0.0"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-flow": "^7.9.0"
   },
   "peerDependencies": {
     "relay-compiler": ">=1.7.0-rc.1",
