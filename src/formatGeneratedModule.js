@@ -27,7 +27,7 @@ const formatGeneratedModule: FormatModule = ({
   const docTextComment = docText ? '\n/*\n' + docText.trim() + '\n*/\n' : '';
   const hashText = hash ? `\n * ${hash}` : '';
   return `/**
- * ${'@'}flow${hashText}
+ * ${'@'}flow strict${hashText}
  */
 
 /* eslint-disable */
