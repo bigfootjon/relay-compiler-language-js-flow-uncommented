@@ -9,13 +9,9 @@
 
 // @flow strict-local
 
-const RelayFlowGenerator = require("relay-compiler/lib/language/javascript/RelayFlowGenerator");
-
-const formatGeneratedModule = require("./formatGeneratedModule");
-
-const {
-    find,
-} = require("relay-compiler/lib/language/javascript/FindGraphQLTags");
+import RelayFlowGenerator from "relay-compiler/lib/language/javascript/RelayFlowGenerator";
+import formatGeneratedModule from "./formatGeneratedModule";
+import { find } from "relay-compiler/lib/language/javascript/FindGraphQLTags";
 
 import type { PluginInterface } from "relay-compiler/language/RelayLanguagePluginInterface";
 
