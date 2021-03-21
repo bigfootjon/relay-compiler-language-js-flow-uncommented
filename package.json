@@ -29,10 +29,10 @@
         "postinstall": "yarn run build"
     },
     "peerDependencies": {
-        "relay-compiler": ">=1.7.0-rc.1",
-        "relay-runtime": "*",
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.0",
-        "@babel/preset-flow": "^7.9.0"
+        "@babel/preset-flow": "^7.9.0",
+        "relay-compiler": ">=1.7.0-rc.1",
+        "relay-runtime": "*"
     }
 }
