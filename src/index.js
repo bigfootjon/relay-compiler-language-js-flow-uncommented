@@ -15,7 +15,7 @@ import { find } from "relay-compiler/lib/language/javascript/FindGraphQLTags";
 
 import type { PluginInterface } from "relay-compiler/language/RelayLanguagePluginInterface";
 
-module.exports = (): PluginInterface => ({
+export default (): PluginInterface => ({
     inputExtensions: ["js", "jsx"],
     outputExtension: "js",
     typeGenerator: RelayFlowGenerator,

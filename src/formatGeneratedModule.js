@@ -44,4 +44,4 @@ module.exports = node;
 `;
 };
 
-module.exports = formatGeneratedModule;
+export default formatGeneratedModule;
