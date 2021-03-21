@@ -8,20 +8,22 @@
  * @format
  */
 
-'use strict';
+"use strict";
 
-const RelayFlowGenerator = require('relay-compiler/lib/language/javascript/RelayFlowGenerator');
+const RelayFlowGenerator = require("relay-compiler/lib/language/javascript/RelayFlowGenerator");
 
-const formatGeneratedModule = require('./formatGeneratedModule');
+const formatGeneratedModule = require("./formatGeneratedModule");
 
-const {find} = require('relay-compiler/lib/language/javascript/FindGraphQLTags');
+const {
+    find,
+} = require("relay-compiler/lib/language/javascript/FindGraphQLTags");
 
-import type {PluginInterface} from '../RelayLanguagePluginInterface';
+import type { PluginInterface } from "../RelayLanguagePluginInterface";
 
 module.exports = (): PluginInterface => ({
-  inputExtensions: ['js', 'jsx'],
-  outputExtension: 'js',
-  typeGenerator: RelayFlowGenerator,
-  formatModule: formatGeneratedModule,
-  findGraphQLTags: find,
+    inputExtensions: ["js", "jsx"],
+    outputExtension: "js",
+    typeGenerator: RelayFlowGenerator,
+    formatModule: formatGeneratedModule,
+    findGraphQLTags: find,
 });

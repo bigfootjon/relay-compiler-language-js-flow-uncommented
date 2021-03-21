@@ -8,26 +8,26 @@
  * @format
  */
 
-'use strict';
+"use strict";
 
-import type { FormatModule } from 'relay-compiler';
+import type { FormatModule } from "relay-compiler";
 
 const formatGeneratedModule: FormatModule = ({
-  moduleName,
-  documentType,
-  docText,
-  concreteText,
-  typeText,
-  hash,
-  sourceHash
+    moduleName,
+    documentType,
+    docText,
+    concreteText,
+    typeText,
+    hash,
+    sourceHash,
 }) => {
-  const documentTypeImport = documentType
-    ? `import type { ${documentType} } from 'relay-runtime';`
-    : '';
-  const docTextComment = docText ? '\n/*\n' + docText.trim() + '\n*/\n' : '';
-  const hashText = hash ? `\n * ${hash}` : '';
-  return `/**
- * ${'@'}flow${hashText}
+    const documentTypeImport = documentType
+        ? `import type { ${documentType} } from 'relay-runtime';`
+        : "";
+    const docTextComment = docText ? "\n/*\n" + docText.trim() + "\n*/\n" : "";
+    const hashText = hash ? `\n * ${hash}` : "";
+    return `/**
+ * ${"@"}flow${hashText}
  */
 
 /* eslint-disable */
@@ -35,10 +35,10 @@ const formatGeneratedModule: FormatModule = ({
 'use strict';
 
 ${documentTypeImport}
-${typeText || ''}
+${typeText || ""}
 
 ${docTextComment}
-const node: ${documentType || 'empty'} = ${concreteText};
+const node: ${documentType || "empty"} = ${concreteText};
 // prettier-ignore
 (node: any).hash = '${sourceHash}';
 module.exports = node;
